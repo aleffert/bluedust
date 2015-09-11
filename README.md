@@ -1,6 +1,4 @@
-#####
-Setup
-#####
+** Setup **
 
 #. Follow https://learn.adafruit.com/bluefruit-le-python-library/installation to install adafruit bluetooth library
 
@@ -10,9 +8,7 @@ Setup
 
 #. If not using serial, comment out line in sketch at start of ``setup`` that says ``COMMENT THIS OUT WHEN NOT USING SERIAL``.
 
-#######
-Running
-#######
+** Running **
 
 ```
 % python ./bluefruit_osc_bridge.py
