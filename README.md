@@ -18,10 +18,9 @@
 2. Open max
 
 3. Run the following terminal command:
-
-```
-% python ./bluefruit_osc_bridge.py
-```
+    ```
+    % python ./bluefruit_osc_bridge.py
+    ```
 
 The order you start max, arduino, and python should not matter.
 
