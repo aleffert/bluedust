@@ -2,9 +2,10 @@
 
 1. Follow https://learn.adafruit.com/bluefruit-le-python-library/installation to install adafruit bluetooth library. If you need to follow the install pyobjc step here, then make sure to use the ``easy_install`` instructions and not the ``pip`` ones.
 
-2. Install pyosc: ```
-% sudo pip install pyosc
-```
+2. Install pyosc:
+    ```
+    sudo pip install pyosc
+    ```
 
 3. Make sure bluetooth module is in CMD not DATA
 
