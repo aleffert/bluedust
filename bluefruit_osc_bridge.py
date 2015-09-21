@@ -64,7 +64,7 @@ class DeviceTracker(object):
 
     def add_device(self, device):
         index = self.next_index()
-        print "Adding device: {0} at port {1}".format(device.id, 8000 + index)
+        print "Adding device: {0} at port {1}".format(device.id, BASE_PORT + index)
         try:
             connection = Connection(device, index)
             self.connections.append(connection)
@@ -105,7 +105,7 @@ class Connection(object):
     def __init__(self, device, index):
         self.device = device
         self.osc = OSC.OSCClient()
-        self.osc.connect(('127.0.0.1', 8000 + index))
+        self.osc.connect(('127.0.0.1', BASE_PORT + index))
 
         device.connect()
         UART.discover(self.device)
@@ -143,7 +143,7 @@ def main():
                     print 'Received: {0} from {1}'.format(received, connection.device.id) #pylint: disable=line-too-long
                     msg = OSC.OSCMessage()
                     msg.setAddress("/route")
-                    msg.append(received)
+                    msg.append(int(received))
                     try:
                         connection.osc.send(msg)
                     except OSC.OSCClientError:

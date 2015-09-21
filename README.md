@@ -29,9 +29,9 @@ The order you start max, arduino, and python should not matter.
 
 There are three files here:
 
-1. An arduino sketch called ``bluedust``. Inside that sketch, there is also a header file, ``BluefruitConfig.h`` with some basic configuration information. This file will need to continue to be side by side with the ``.ino`` file.
+1. An arduino sketch called ``bluedust``. Inside the sketch directory, there is also a header file, ``BluefruitConfig.h`` with some basic configuration information. This file will need to continue to be side by side with the ``.ino`` file.
 
-2. A very simple proof of concept max patch called ``udp-example.maxpat`` that listens for data from two different devices over OSC and prints them to console.
+2. A very simple proof of concept max patch called ``udp-example.maxpat`` that listens for data from two different devices over OSC and prints their values to the console.
 
 3. A python script ``bluefruit_osc_bridge.py`` that does the bridging between bluetooth and max via OSC.
 
